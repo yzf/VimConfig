@@ -1,1 +1,1 @@
-VimConfigJust for mac
+# VimConfig--------------------------Just for mac

@@ -30,7 +30,7 @@ set termencoding=utf-8
 set fileencodings=utf-8,gb2312
 
 " File formats
-set fileformats=mac,unix,dos
+set fileformats=unix,dos,mac
 
 " Timeout
 set timeoutlen=500
@@ -63,10 +63,12 @@ set laststatus=2
 set matchtime=0
 
 " Enable syntax highlighting
-syntax on
+syntax enable 
 
 " Set colors
 set t_Co=256
+set background=dark
+colorscheme distinguished
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "              Text, Tab, Indent, Backspece            "
