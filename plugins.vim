@@ -1,3 +1,6 @@
+" Automatically source the plugins.vim when it is saved
+autocmd! bufwritepost plugins.vim source %
+
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

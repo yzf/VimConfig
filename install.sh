@@ -2,7 +2,7 @@
 
 # Check if vim has been installed
 if [ a`which vim` = a'' ]
-  then
+then
   echo "Please install vim first"
   exit 1
 fi
@@ -13,11 +13,11 @@ echo "Bakeup '.vimrc' and '.vim' into $bakeup_folder"
 rm -rf $bakeup_folder
 mkdir -p $bakeup_folder
 if [ -f ~/.vimrc ]
-  then
+then
   mv ~/.vimrc $bakeup_folder/vimrc
 fi
 if [ -d ~/.vim ]
-  then
+then
   mv ~/.vim $bakeup_folder/vim
 fi
 

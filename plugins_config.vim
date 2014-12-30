@@ -14,6 +14,9 @@ nmap <silent> <leader>s <Plug>GoldenViewSwitchMain
 nmap <silent> <leader>S <Plug>GoldenViewSwitchToggle
 
 " Nerdtree settings
-map <leader>n :NERDTreeToggle<cr>
+nmap <leader>n :NERDTreeToggle<cr>
 let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]']
+
+" Tagbar settings
+nmap <leader>m :TagbarToggle<cr>
 
