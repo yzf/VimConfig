@@ -26,8 +26,10 @@ mkdir -p ~/.vim
 cp vimrc ~/.vimrc
 cp -r colors ~/.vim
 cp plugins.vim ~/.vim
-# download the vundle plugin for managing plugins
+cp plugins_config.vim ~/.vim
+# Download the vundle plugin for managing plugins
 git clone http://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# Install all the plugins set in the plugins.vim
 vim +PluginInstall +qall
 
 exit 0

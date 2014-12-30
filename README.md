@@ -1,1 +1,1 @@
-# VimConfig--------------------------Just for mac
+# VimConfig--------------------------## Plugins  1. [Vundle.vim](https://github.com/gmarik/Vundle.vim) -The plug-in manager for vim  2. [auto-pairs](https://github.com/jiangmiao/auto-pairs) -Vim plugin, insert or delete brackets, parens, quotes in pair  3. [GoldenView.Vim](https://github.com/zhaocai/GoldenView.Vim) -Always have a nice view for vim split windowsJust for mac
