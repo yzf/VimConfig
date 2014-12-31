@@ -2,7 +2,7 @@
 autocmd! bufwritepost plugins_config.vim source %
 
 " Set mapleader
-let mapleader=","
+let mapleader = ","
 
 " Auto-Pairs settings
 autocmd FileType html,xml,php let g:AutoPairs = {'(':')', '[':']', '{':'}', "'":"'", '"':'"', '`':'`', '<':'>'}
@@ -19,4 +19,18 @@ let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]']
 
 " Tagbar settings
 nmap <leader>m :TagbarToggle<cr>
+
+" CtrlP settings
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_max_height = 20
+let g:ctrlp_working_path_mode = 'r'
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
+set wildignore+=*.class
+set wildignore+=*.o
+
+" Ack.vim settings
+nmap <leader>a :Ack <C-R><C-W>
 

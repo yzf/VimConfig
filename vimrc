@@ -12,6 +12,8 @@ endtry
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      General                         "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto clean the terminal after close vim
+set term=xterm
 " Use Vim defaults instead of 100% vi compatibility
 set nocompatible	
 
