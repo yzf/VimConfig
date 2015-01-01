@@ -34,3 +34,4 @@ set wildignore+=*.o
 " Ack.vim settings
 nmap <leader>a :Ack <C-R><C-W>
 
+
