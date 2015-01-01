@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add plugins here
+Plugin 'flazz/vim-colorschemes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'scrooloose/nerdtree'

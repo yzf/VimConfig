@@ -68,7 +68,11 @@ syntax enable
 
 " Set colors
 set t_Co=256
-colorscheme molokai
+try
+  colorscheme molokai
+catch
+  colorscheme desert
+endtry
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "              Text, Tab, Indent, Backspece            "
