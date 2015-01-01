@@ -6,6 +6,7 @@
 
   1. [exuberant-ctags](http://ctags.sourceforge.net/)
   2. [ack-grep](http://betterthangrep.com/)
+  3. [cmake](http://www.cmake.org/)
 
 
 ## Installation
@@ -18,6 +19,10 @@
 brew install ctags
 brew install ack
 bash install.sh
+# Compile YouCompleteMe
+brew install cmake
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
 ```
 
 ## Plugins
@@ -30,6 +35,7 @@ bash install.sh
   6. [a.vim](https://github.com/vim-scripts/a.vim) -Alternate Files quickly (.c --> .h etc)
   7. [ctrlp.vim](https://github.com/kien/ctrlp.vim) -Fuzzy file, buffer, mru, tag, etc finder
   8. [ack.vim](https://github.com/mileszs/ack.vim) -Vim plugin for the Perl module / CLI script 'ack'
+  9. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) -A code-completion engine for Vim
 
 ## References
 
