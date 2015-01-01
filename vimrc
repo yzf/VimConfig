@@ -130,6 +130,7 @@ set magic
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>q :q<cr>
 nmap <leader>w :w<cr>
+nmap <leader>o <c-o>
 " Easier moving between windows
 nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
@@ -138,7 +139,7 @@ nmap <c-l> <c-w>l
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-"               Autocmd, Helper Functions              "
+"                       Autocmd                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent
 autocmd FileType h,hh,hpp,c,cc,cpp set cindent

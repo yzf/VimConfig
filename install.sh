@@ -27,6 +27,7 @@ cp vimrc ~/.vimrc
 cp -r colors ~/.vim
 cp plugins.vim ~/.vim
 cp plugins_config.vim ~/.vim
+cp ycm_extra_conf.py ~/.vim
 # Download the vundle plugin for managing plugins
 git clone http://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install all the plugins set in the plugins.vim
