@@ -18,7 +18,7 @@
 # For mac
 brew install ctags
 brew install ack
-bash install.sh
+./install.sh
 # Compile YouCompleteMe
 brew install cmake
 cd ~/.vim/bundle/YouCompleteMe
