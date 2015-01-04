@@ -43,9 +43,7 @@ flags = [
 '-x',
 'c++',
 '-isystem',
-'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include',
-'-isystem',
-'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/',
+'/usr/include',
 '-isystem',
 '/usr/local/include',
 ]
