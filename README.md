@@ -13,9 +13,11 @@
 
   1. Install the dependencies
   2. Run the install.sh
+  3. Fix ycm's dependency and compile it
 
+
+### For mac
 ``` bash
-# For mac
 brew install ctags
 brew install ack
 bash install.sh
@@ -23,6 +25,62 @@ bash install.sh
 brew install cmake
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
+# Modify the ~/.vim/ycm_extra_conf.py to add the c/c++ header files' path
+# In Mac, the flags variable in it may like this
+flags = [
+'-Wall',
+'-Wextra',
+'-Werror',
+'-fexceptions',
+'-DNDEBUG',
+'-std=c++11',
+'-x',
+'c++',
+'-isystem',
+'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include',
+'-isystem',
+'/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/',
+'-isystem',
+'/usr/local/include',
+]
+```
+
+### For Debian
+``` bash
+sudo apt-get install ack-grep exuberant-ctags
+./install.sh
+
+# Update glibc, debian's glibc is 2.13, but ycm need 2.14 or newer
+# Add the following into /etc/apt/sources.list
+deb http://mirrors.163.com/debian sid main
+# Then update
+sudo apt-get update
+sudo apt-get -t sid install libc6 libc6-dev libc6-dbg
+# Notice that, after updating gclibc, it's better to revert /etc/apt/sources.list
+
+# Compile YouCompleteMe
+sudo apt-get install cmake
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
+
+# Modify the ~/.vim/ycm_extra_conf.py to add the c/c++ header files' path
+# In debian, the flags variable in it may like this
+flags = [
+'-Wall',
+'-Wextra',
+'-Werror',
+'-fexceptions',
+'-DNDEBUG',
+'-std=c++11',
+'-x',
+'c++',
+'-isystem',
+'/usr/include',
+'-isystem',
+'/usr/local/include',
+'-isystem',
+'/usr/include/c++/4.7.2/',
+]
 ```
 
 ## Plugins
