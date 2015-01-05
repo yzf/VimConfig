@@ -139,10 +139,10 @@ nmap <leader>q :q<cr>
 nmap <leader>w :w<cr>
 nmap <leader>o <c-o>
 " Easier moving between windows
-nmap <leader>j <c-w>j
-nmap <leader>k <c-w>k
-nmap <leader>h <c-w>h
-nmap <leader>l <c-w>l
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-h> <c-w>h
+nmap <c-l> <c-w>l
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
