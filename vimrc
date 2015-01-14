@@ -93,11 +93,11 @@ set expandtab
 set smarttab
 
 " Tab width
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 
 " Shift
-set shiftwidth=2
+set shiftwidth=4
 set shiftround
 
 " Auto indent
@@ -107,7 +107,6 @@ set autoindent
 set smartindent
 
 " Backspace
-set backspace=2		" more powerful backspacing
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
