@@ -4,8 +4,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable plugins
 try
-  source ~/.vim/plugins.vim
-  source ~/.vim/plugins_config.vim
+    source ~/.vim/plugins.vim
+    source ~/.vim/plugins_config.vim
 catch
 endtry
 
@@ -69,14 +69,15 @@ syntax enable
 " Set colors
 set t_Co=256
 try
-  colorscheme molokai
+    colorscheme molokai
 catch
-  colorscheme desert
+    colorscheme desert
 endtry
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "              Text, Tab, Indent, Backspece            "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+set cinoptions=g0
 " Text width
 set textwidth=80
 
@@ -150,8 +151,8 @@ autocmd FileType h,hh,hpp,c,cc,cpp set cindent
 " Build and run(just avaiable for a single source code)
 autocmd FileType c imap <F9> <esc>:w<cr>:!clear && gcc % -o %< && ./%<<cr>
 autocmd FileType c nmap <F9> :w<cr>:!clear && gcc % -o %< && ./%<<cr>
-autocmd FileType cpp imap <F9> <esc>:w<cr>:!clear && g++ % -o %< && ./%<<cr>
-autocmd FileType cpp nmap <F9> :w<cr>:!clear && g++ % -o %< && ./%<<cr>
+autocmd FileType cpp imap <F9> <esc>:w<cr>:!clear && g++ -isystem/usr/local/include % -o %< && ./%<<cr>
+autocmd FileType cpp nmap <F9> :w<cr>:!clear && g++ -isystem/usr/local/include % -o %< && ./%<<cr>
 autocmd FileType python imap <F9> <esc>:w<cr>:!clear && python %<cr>
 autocmd FileType python nmap <F9> :w<cr>:!clear && python %<cr>
 autocmd FileType sh imap <F9> <esc>:w<cr>:!clear && bash %<cr>
