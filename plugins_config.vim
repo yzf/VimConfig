@@ -35,8 +35,8 @@ set wildignore+=*.o
 nmap <leader>a :Ack <C-R><C-W>
 
 " YouCompleteMe setting
+set completeopt-=preview
 nmap <leader>g :YcmCompleter GoTo<CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
