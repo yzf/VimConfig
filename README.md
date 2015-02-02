@@ -7,6 +7,7 @@
   1. [exuberant-ctags](http://ctags.sourceforge.net/)
   2. [ack-grep](http://betterthangrep.com/)
   3. [cmake](http://www.cmake.org/)
+  4. [pbcopy(mac) or xsel(unix)]
 
 
 ## Installation
@@ -47,7 +48,7 @@ flags = [
 
 ### For Debian
 ``` bash
-sudo apt-get install ack-grep exuberant-ctags
+sudo apt-get install ack-grep exuberant-ctags xsel
 ./install.sh
 
 # Update glibc, debian's glibc is 2.13, but ycm need 2.14 or newer
