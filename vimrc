@@ -15,7 +15,7 @@ endtry
 " Auto clean the terminal after close vim
 set term=xterm
 " Use Vim defaults instead of 100% vi compatibility
-set nocompatible	
+set nocompatible
 
 " Automatically read a file when it is changed from the outside
 set autoread
@@ -42,7 +42,7 @@ set hidden
 " History
 set history=700
 
-" Undo 
+" Undo
 set undolevels=700
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -64,7 +64,7 @@ set laststatus=2
 set matchtime=0
 
 " Enable syntax highlighting
-syntax enable 
+syntax enable
 
 " Set colors
 set t_Co=256
@@ -140,7 +140,14 @@ nmap <c-j> <c-w>j
 nmap <c-k> <c-w>k
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
-
+" Copy to system's clipboard
+if has('mac')
+    vmap "+y :w !pbcopy<cr><cr>
+    vmap <c-c> "+y
+else
+    vmap "+y :w !xsel -b<cr><cr>
+    vmap <c-c> "+y
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                       Autocmd                        "
@@ -157,3 +164,13 @@ autocmd FileType python imap <F9> <esc>:w<cr>:!clear && python %<cr>
 autocmd FileType python nmap <F9> :w<cr>:!clear && python %<cr>
 autocmd FileType sh imap <F9> <esc>:w<cr>:!clear && bash %<cr>
 autocmd FileType sh nmap <F9> :w<cr>:!clear && bash %<cr>
+
+" Auto delete trailing white space on saving
+function! DeleteTrailingWhiteSpace()
+    if index(['markdown'], &ft) == -1
+        exe "normal mz"
+        %s/\s\+$//ge
+        exe "normal `z"
+    end
+endfunction
+autocmd! bufwritepre * :call DeleteTrailingWhiteSpace()
