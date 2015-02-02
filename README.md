@@ -7,7 +7,7 @@
   1. [exuberant-ctags](http://ctags.sourceforge.net/)
   2. [ack-grep](http://betterthangrep.com/)
   3. [cmake](http://www.cmake.org/)
-  4. [pbcopy(mac) or xsel(unix)]
+  4. pbcopy(mac) or xsel(unix)
 
 
 ## Installation
