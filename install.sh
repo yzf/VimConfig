@@ -24,7 +24,6 @@ fi
 echo "Begin to install vim's plugins"
 mkdir -p ~/.vim
 cp vimrc ~/.vimrc
-cp -r colors ~/.vim
 cp plugins.vim ~/.vim
 cp plugins_config.vim ~/.vim
 cp ycm_extra_conf.py ~/.vim
