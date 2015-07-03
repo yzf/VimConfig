@@ -23,6 +23,7 @@ fi
 
 echo "Begin to install vim's plugins"
 mkdir -p ~/.vim
+cp -r template ~/.vim
 cp vimrc ~/.vimrc
 cp plugins.vim ~/.vim
 cp plugins_config.vim ~/.vim
