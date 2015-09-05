@@ -155,6 +155,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent
 autocmd FileType h,hh,hpp,c,cc,cpp,py set cindent
+autocmd FileType yaml call YamlTabWidth()
 
 " Build and run(just avaiable for a single source code)
 autocmd FileType c imap <F9> <esc>:w<cr>:!clear && gcc % -o %< && ./%<<cr>
@@ -173,6 +174,12 @@ try
     autocmd BufNewFile *.py 0r ~/.vim/template/pythonconfig.py
 catch
 endtry
+
+function! YamlTabWidth()
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+endfunction
 
 " Auto delete trailing white space on saving
 function! DeleteTrailingWhiteSpace()
