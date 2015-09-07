@@ -79,7 +79,7 @@ endtry
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 set cinoptions=g0
 " Text width
-set textwidth=80
+set textwidth=120
 
 " Color the column 80
 set colorcolumn=80
@@ -165,6 +165,8 @@ autocmd FileType python imap <F9> <esc>:w<cr>:!clear && python %<cr>
 autocmd FileType python nmap <F9> :w<cr>:!clear && python %<cr>
 autocmd FileType sh imap <F9> <esc>:w<cr>:!clear && bash %<cr>
 autocmd FileType sh nmap <F9> :w<cr>:!clear && bash %<cr>
+autocmd FileType erlang imap <F9> <esc>:w<cr>:!clear && escript %<cr>
+autocmd FileType erlang nmap <F9> :w<cr>:!clear && escript %<cr>
 
 " Add new file templates
 try

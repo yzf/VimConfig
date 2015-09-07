@@ -15,7 +15,7 @@ nmap <silent> <leader>S <Plug>GoldenViewSwitchToggle
 
 " Nerdtree settings
 nmap <leader>n :NERDTreeToggle<cr>
-let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]']
+let NERDTreeIgnore=['.o$[[file]]', '.class$[[file]]', '.git$[[dir]]', 'init__.py$[[file]]', '.pyc$[[file]]', '.beam$[[file]]']
 
 " Tagbar settings
 nmap <leader>m :TagbarToggle<cr>
@@ -43,10 +43,10 @@ let g:ycm_seed_identifiers_with_syntax = 1
 
 
 " syctastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
