@@ -32,7 +32,10 @@ set wildignore+=*.class
 set wildignore+=*.o
 
 " Ack.vim settings
-nmap <leader>a :Ack <C-R><C-W>
+"nmap <leader>a :Ack <C-R><C-W>
+
+" ag.vim
+nmap <leader>a :Ag <C-R><C-W>
 
 " YouCompleteMe setting
 set completeopt-=preview

@@ -142,13 +142,9 @@ nmap <c-k> <c-w>k
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 " Copy to system's clipboard
-if has('mac')
-    vmap "+y :w !pbcopy<cr><cr>
-    vmap <c-c> "+y
-else
-    vmap "+y :w !xsel -b<cr><cr>
-    vmap <c-c> "+y
-endif
+vmap <c-c> "+y
+vmap <leader>c <c-c>
+vmap <leader>v "+p
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                       Autocmd                        "
