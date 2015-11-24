@@ -144,7 +144,7 @@ nmap <c-l> <c-w>l
 " Copy to system's clipboard
 vmap <c-c> "+y
 vmap <leader>c <c-c>
-vmap <leader>v "+p
+nmap <leader>v "+p
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                       Autocmd                        "

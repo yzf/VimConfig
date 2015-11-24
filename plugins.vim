@@ -23,6 +23,8 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'jimenezrick/vimerl'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'puppetlabs/puppet-syntax-vim'
 "Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
